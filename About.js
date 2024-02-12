@@ -1,18 +1,9 @@
 import React from 'react';
 import {View, Text, Button} from 'react-native';
-const About = ({route, navigation}) => {
-  const {name} = route.params;
+const About = () => {
   return (
     <View>
-      <Text>About {name}</Text>
-      <Button
-        title="Update"
-        onPress={() =>
-          navigation.setParams({
-            name: 'Singh',
-          })
-        }
-      />
+      <Text>About</Text>
     </View>
   );
 };
